@@ -3,6 +3,9 @@ import Slider from 'react-slick';
 import './App.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import barba1 from './barba1.jpg'; // Imagem importada
+import cabelobarba from './cabelobarba.jpg'; // Imagem importada
+import corte from './corte.jpg'; // Imagem importada
 
 function App() {
   const [formData, setFormData] = useState({ name: '', email: '', date: '', time: '' });
@@ -47,20 +50,19 @@ function App() {
       </section>
 
       <section id="carousel">
-  <h2>Nossos Trabalhos</h2>
-  <Slider {...settings}>
-    <div>
-      <img src="./barba1.jpg" alt="Corte de cabelo 1" />
-    </div>
-    <div>
-      <img src="./cabelobarba.jpg" alt="Corte de cabelo 2" />
-    </div>
-    <div>
-      <img src="./corte.jpg" alt="Corte de cabelo 3" />
-    </div>
-  </Slider>
-</section>
-
+        <h2>Nossos Trabalhos</h2>
+        <Slider {...settings}>
+          <div>
+            <img src= {barba1} alt="Corte de cabelo 1" />
+          </div>
+          <div>
+            <img src={cabelobarba} alt="Corte de cabelo 2" />
+          </div>
+          <div>
+            <img src={corte} alt="Corte de cabelo 3" />
+          </div>
+        </Slider>
+      </section>
 
       <section id="services">
         <h2>Serviços</h2>
