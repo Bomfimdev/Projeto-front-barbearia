@@ -9,6 +9,7 @@ import corte from './corte.jpg'; // Imagem importada
 
 function App() {
   const [formData, setFormData] = useState({ name: '', email: '', date: '', time: '' });
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -26,21 +27,30 @@ function App() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,         // Habilita o autoplay
-    autoplaySpeed: 1500,    // Define o intervalo de 1.5 segundos
+    autoplay: true,
+    autoplaySpeed: 1500,
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <div>
       <header>
-        <h1>Barbearia Vikings</h1>
+        <div className="logo">
+          <h1>Barbearia Vikings</h1>
+        </div>
         <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#testimonials">Depoimentos</a></li>
-            <li><a href="#booking">Agendar</a></li>
+          <ul className={isOpen ? "menu open" : "menu"}>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
           </ul>
+          <div className="hamburger" onClick={toggleMenu}>
+            &#9776;
+          </div>
         </nav>
       </header>
 
@@ -53,7 +63,7 @@ function App() {
         <h2>Nossos Trabalhos</h2>
         <Slider {...settings}>
           <div>
-            <img src= {barba1} alt="Corte de cabelo 1" />
+            <img src={barba1} alt="Corte de cabelo 1" />
           </div>
           <div>
             <img src={cabelobarba} alt="Corte de cabelo 2" />
@@ -93,35 +103,35 @@ function App() {
       <section id="booking">
         <h2>Agende seu Horário</h2>
         <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Seu Nome" 
-            value={formData.name} 
+          <input
+            type="text"
+            name="name"
+            placeholder="Seu Nome"
+            value={formData.name}
             onChange={handleChange}
-            required 
+            required
           />
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Seu E-mail" 
-            value={formData.email} 
+          <input
+            type="email"
+            name="email"
+            placeholder="Seu E-mail"
+            value={formData.email}
             onChange={handleChange}
-            required 
+            required
           />
-          <input 
-            type="date" 
-            name="date" 
-            value={formData.date} 
+          <input
+            type="date"
+            name="date"
+            value={formData.date}
             onChange={handleChange}
-            required 
+            required
           />
-          <input 
-            type="time" 
-            name="time" 
-            value={formData.time} 
+          <input
+            type="time"
+            name="time"
+            value={formData.time}
             onChange={handleChange}
-            required 
+            required
           />
           <button type="submit">Agendar</button>
         </form>

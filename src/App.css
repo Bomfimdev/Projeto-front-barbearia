@@ -1,11 +1,13 @@
+/* Estilo geral do body */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Fundo geral */
 }
 
+/* Estilo do cabeçalho */
 header {
   background-color: #c69c6d; /* Cor couro */
   color: #FFD700; /* Amarelo */
@@ -16,6 +18,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo do menu de navegação */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -38,6 +41,7 @@ nav ul li a:hover {
   color: #c69c6d; /* Cor couro */
 }
 
+/* Estilo das seções */
 section {
   padding: 40px;
   text-align: center;
@@ -67,6 +71,7 @@ section ul li {
   color: #333; /* Cor escura para o texto */
 }
 
+/* Estilo do banner */
 .banner {
   background: url('https://source.unsplash.com/1600x900/?barbershop,men') no-repeat center center/cover;
   color: #FFD700; /* Amarelo */
@@ -85,6 +90,7 @@ section ul li {
   margin-top: 0;
 }
 
+/* Estilo do formulário de agendamento */
 form {
   display: flex;
   flex-direction: column;
@@ -115,6 +121,7 @@ button:hover {
   background-color: #c69c6d; /* Cor couro */
 }
 
+/* Estilo da seção de depoimentos */
 #testimonials {
   background-color: #f9f9f9; /* Fundo claro para a seção de depoimentos */
   padding: 40px;
@@ -133,6 +140,7 @@ button:hover {
   color: #c69c6d; /* Cor couro para o título dos depoimentos */
 }
 
+/* Estilo da seção do carrossel */
 #carousel {
   padding: 60px; /* Aumentar o padding para mais espaço */
   text-align: center;
@@ -161,6 +169,7 @@ button:hover {
   object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
 }
 
+/* Estilo da seção de agendamento */
 #booking {
   padding: 40px;
   text-align: center;
@@ -201,10 +210,32 @@ button:hover {
   background-color: #a76d4d; /* Tom mais escuro ao passar o mouse */
 }
 
+/* Estilo do rodapé */
+footer {
+  background-color: #c69c6d; /* Cor couro */
+  color: #FFD700; /* Amarelo */
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Ícone do hambúrguer em dispositivos móveis */
+.hamburger {
+  display: none; /* Inicialmente oculto em dispositivos maiores */
+  font-size: 2em;
+  cursor: pointer;
+}
+
 /* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column; /* Coloca os itens do menu em coluna */
+    flex-direction: column; /* Itens do menu em coluna */
     align-items: center;
   }
 
@@ -236,6 +267,27 @@ button:hover {
   button {
     width: 90%; /* Aumenta a largura do botão em telas menores */
   }
+
+  .hamburger {
+    display: block; /* Exibir o ícone de hambúrguer */
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c69c6d;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .menu.open {
+    display: flex;
+  }
 }
 
 @media (max-width: 480px) {
@@ -256,10 +308,22 @@ button:hover {
   }
 
   input, textarea {
-    max-width: 90%; /* Aumenta a largura do campo de entrada em telas menores */
+    max-width: 90%; /* Aumenta a largura máxima do campo de entrada */
   }
 
-  button {
-    max-width: 90%; /* Aumenta a largura do botão em telas menores */
+  #carousel {
+    padding: 20px; /* Diminui o padding do carrossel */
+  }
+
+  #carousel h2 {
+    font-size: 1.5em; /* Diminui o tamanho da fonte do título do carrossel */
+  }
+
+  #carousel .slick-slide {
+    flex-direction: column; /* Muda a direção dos slides para coluna */
+  }
+
+  #carousel img {
+    max-height: 200px; /* Diminui a altura máxima das imagens do carrossel */
   }
 }
