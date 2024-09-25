@@ -1,70 +1,78 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Barbearia - Website Responsivo
 
-## Available Scripts
+![Barbearia Banner](https://source.unsplash.com/1600x900/?barbershop,men)
 
-In the project directory, you can run:
+Este é um projeto de um website responsivo para uma barbearia, oferecendo uma experiência otimizada tanto para desktop quanto para dispositivos móveis. O site apresenta seções para agendamentos, depoimentos de clientes, um carrossel de imagens, e uma seção de contato.
 
-### `npm start`
+## 📋 Índice
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Descrição](#descrição)
+- [Funcionalidades](#funcionalidades)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Tecnologias](#tecnologias)
+- [Licença](#licença)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📝 Descrição
 
-### `npm test`
+O site da Barbearia foi projetado para facilitar a interação dos clientes com os serviços oferecidos. Além disso, ele tem como foco proporcionar uma navegação fluida e intuitiva em qualquer dispositivo, seja desktop, tablet ou smartphone.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O layout utiliza uma paleta de cores baseada em couro e tons de ouro, passando a sensação de sofisticação e conforto. Além disso, o site conta com uma imagem de banner dinâmica, formulários de contato e agendamento, além de depoimentos e um carrossel de imagens.
 
-### `npm run build`
+## ✨ Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Layout responsivo**: Se adapta perfeitamente a qualquer dispositivo.
+- **Formulário de agendamento**: Permite que os clientes marquem um horário diretamente pelo site.
+- **Depoimentos**: Seção dedicada para feedback dos clientes.
+- **Carrossel de imagens**: Mostra as fotos do portfólio da barbearia.
+- **Botão de menu hambúrguer**: Para facilitar a navegação em dispositivos móveis.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/barbearia-website.git
+   ```
 
-### `npm run eject`
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd barbearia-website
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Abra o arquivo `index.html` no seu navegador:
+   ```bash
+   open index.html
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Uso
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ao abrir o arquivo `index.html` no navegador, o site da barbearia será exibido. O site pode ser visualizado em qualquer dispositivo e se adapta automaticamente ao tamanho da tela.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Use o menu no topo para navegar entre as seções.
+- Acesse a seção de **Agendamento** para preencher o formulário e marcar um horário.
+- Confira os **Depoimentos** de clientes e veja o portfólio de trabalhos no **Carrossel** de imagens.
 
-## Learn More
+## 🛠 Tecnologias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Este projeto foi desenvolvido usando as seguintes tecnologias:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **HTML5**: Para a estrutura do site.
+- **CSS3**: Estilização responsiva e design adaptável.
+- **JavaScript**: Funcionalidades como menu hambúrguer e carrossel de imagens.
+- **Slick Carousel**: Biblioteca usada para implementar o carrossel de imagens.
+- **Unsplash API**: Para imagens dinâmicas usadas no banner.
 
-### Code Splitting
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📞 Contato
 
-### Making a Progressive Web App
+- **E-mail**: [Gbomfimprofissional@gmail.com](mailto:Gbomfimprofissional@gmail.com)
+- **LinkedIn**: [gabriel-bomfim-Oliveira](https://linkedin.com/in/gabriel-bomfim-Oliveira)
+- **GitHub**: [Bomfim3321](https://github.com/Bomfim3321)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
