@@ -47,19 +47,20 @@ function App() {
       </section>
 
       <section id="carousel">
-        <h2>Nossos Trabalhos</h2>
-        <Slider {...settings}>
-          <div>
-            <img src="./barba1.jpg" alt="Corte de cabelo 1" />
-          </div>
-          <div>
-            <img src="./cabelobarba.jpg" alt="Corte de cabelo 2" />
-          </div>
-          <div>
-            <img src="./corte.jpg" alt="Corte de cabelo 3" />
-          </div>
-        </Slider>
-      </section>
+  <h2>Nossos Trabalhos</h2>
+  <Slider {...settings}>
+    <div>
+      <img src="./barba1.jpg" alt="Corte de cabelo 1" />
+    </div>
+    <div>
+      <img src="./cabelobarba.jpg" alt="Corte de cabelo 2" />
+    </div>
+    <div>
+      <img src="./corte.jpg" alt="Corte de cabelo 3" />
+    </div>
+  </Slider>
+</section>
+
 
       <section id="services">
         <h2>Serviços</h2>
